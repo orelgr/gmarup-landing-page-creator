@@ -1,14 +1,15 @@
 
 import React, { useState } from 'react';
 import { Play } from 'lucide-react';
+import { AspectRatio } from './ui/aspect-ratio';
 
 const VideoSection = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const videoId = 'ddKbNms05aA'; // YouTube video ID
 
   const handlePlayVideo = () => {
     setIsPlaying(true);
-    // In a real implementation, this would trigger the video to play
   };
 
   return (
@@ -21,31 +22,43 @@ const VideoSection = () => {
           צפו בסרטון קצר (90 ש׳) שמראה איך להתחבר וללמוד
         </p>
         
-        <div className="relative max-w-3xl mx-auto aspect-video bg-gray-200 rounded-xl overflow-hidden shadow-lg">
-          {!isPlaying ? (
-            <div 
-              className="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-40 cursor-pointer"
-              onClick={handlePlayVideo}
-            >
-              <button 
-                className="w-16 h-16 md:w-20 md:h-20 bg-white bg-opacity-90 rounded-full flex items-center justify-center transition-transform hover:scale-105"
-                aria-label="הפעל סרטון"
-              >
-                <Play size={32} className="text-gmarup-blue mr-1" />
-              </button>
-              <span className="sr-only">הפעל סרטון</span>
-            </div>
-          ) : (
-            <div className="w-full h-full bg-black flex items-center justify-center text-white">
-              <p>סרטון לדוגמה - יוחלף בסרטון אמיתי</p>
-            </div>
-          )}
-          <img 
-            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=1600"
-            alt="תמונת קדימון לסרטון הדרכה"
-            className={`w-full h-full object-cover ${isPlaying ? 'hidden' : 'block'}`}
-            loading="lazy"
-          />
+        <div className="mx-auto max-w-md"> {/* Reduced width container for vertical video */}
+          <div className="relative rounded-xl overflow-hidden shadow-lg bg-gray-100">
+            {!isPlaying ? (
+              <div className="relative">
+                <AspectRatio ratio={9/16} className="bg-gray-200">
+                  <img 
+                    src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                    alt="תמונת קדימון לסרטון הדרכה"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </AspectRatio>
+                <div 
+                  className="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-40 cursor-pointer"
+                  onClick={handlePlayVideo}
+                >
+                  <button 
+                    className="w-16 h-16 md:w-20 md:h-20 bg-white bg-opacity-90 rounded-full flex items-center justify-center transition-transform hover:scale-105"
+                    aria-label="הפעל סרטון"
+                  >
+                    <Play size={32} className="text-gmarup-blue mr-1" />
+                  </button>
+                  <span className="sr-only">הפעל סרטון</span>
+                </div>
+              </div>
+            ) : (
+              <div className="relative pb-[177.78%]"> {/* 9:16 aspect ratio with padding bottom */}
+                <iframe
+                  src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
+                  title="GmarUp Tutorial Video"
+                  className="absolute top-0 left-0 w-full h-full border-0"
+                  allowFullScreen
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                ></iframe>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </section>
