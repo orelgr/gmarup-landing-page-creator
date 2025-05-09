@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
-import { Button } from './ui/button';
 
 const CallToAction = () => {
   return (
@@ -12,7 +11,7 @@ const CallToAction = () => {
         </h2>
         <div className="flex justify-center">
           <a 
-            href="https://app.gmarup.com" 
+            href="https://gmarup.com" 
             className="bg-gmarup-gold hover:bg-gmarup-gold/90 text-gray-900 py-3 px-6 rounded-xl font-medium transition-all flex items-center gap-2"
           >
             התחבר למערכת
