@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -90,12 +94,34 @@
   }
 }
 
+html {
+  direction: rtl;
+}
+
 @layer base {
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-assistant;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-assistant font-semibold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-primary text-white py-3 px-6 rounded-xl font-medium hover:opacity-90 transition-all focus:ring-2 focus:ring-gmarup-blue focus:outline-none;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-gmarup-blue py-3 px-6 rounded-xl font-medium border border-gmarup-blue hover:bg-gray-50 transition-all focus:ring-2 focus:ring-gmarup-blue focus:outline-none;
+  }
+  
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-24;
   }
 }
