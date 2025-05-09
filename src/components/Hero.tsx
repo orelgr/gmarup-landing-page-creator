@@ -6,8 +6,8 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center text-center">
           <div className="md:w-1/2 text-white animate-fade-in mt-6 md:mt-0">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-4">GmarUp – חוויית לימוד גמרא שלא הכרת
-          </h1>
+            <h1 className="text-3xl lg:text-5xl font-semibold leading-tight mb-4 md:text-4xl">GmarUp 
+ חוויית לימוד גמרא שלא הכרת</h1>
             <p className="text-lg md:text-xl opacity-90 mb-8">חוויית לימוד מותאמת-אישית, הבנה קלה,
 ולימוד מהנה בעזרת AI מתקדם.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">

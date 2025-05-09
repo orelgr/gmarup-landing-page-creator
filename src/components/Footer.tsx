@@ -8,9 +8,7 @@ const Footer = () => {
               <h2 className="text-xl font-bold text-gmarup-blue">GmarUp</h2>
               <p className="text-gray-600 mt-2">לומדים, מבינים, מתקדמים</p>
             </div>
-            <p className="text-gray-500 text-sm">
-              GmarUp היא אפליקציית AI מתקדמת ללימוד גמרא המשלבת טכנולוגיה חדשנית עם לימוד מסורתי.
-            </p>
+            <p className="text-gray-500 text-sm">חוויית לימוד מותאמת-אישית, הבנה קלה, ולימוד מהנה בעזרת AI מתקדם.</p>
           </div>
           
           <div>
@@ -53,10 +51,7 @@ const Footer = () => {
               © 2025 GmarUp. כל הזכויות שמורות.
             </p>
             <div>
-              <p className="text-gray-500 text-xs">
-                {/* Google Tag Manager placeholder */}
-                GTM-XXXXX
-              </p>
+              
             </div>
           </div>
         </div>
