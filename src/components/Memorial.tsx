@@ -5,7 +5,7 @@ const Memorial = () => {
         <div className="max-w-3xl mx-auto bg-white p-6 md:p-8 rounded-lg border-t-4 border-gmarup-gold relative">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden flex-shrink-0 shadow-md">
-              <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&q=80&w=800" alt="רס״ל אור מנצור ז״ל" className="w-full h-full object-cover" loading="lazy" />
+              <img alt="רס״ל אור מנצור ז״ל" className="w-full h-full object-cover" loading="lazy" src="https://imgs.search.brave.com/ERf8CoBdzMhe7paMjm2FHktXmzcrGre_e6kVqGRGZS4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly95bmV0/LXBpYzEueWl0LmNv/LmlsL3BpY3NlcnZl/cjUvd2NtX3VwbG9h/ZC8yMDI0LzEwLzAz/L0hKOEo5RzZpQVIv/X19fX19fX19fX19f/X18uanBn" />
             </div>
             <div className="text-center md:text-right">
               <h2 className="text-xl md:text-2xl font-semibold mb-4">לזכר רס״ל אור מנצור ז״ל</h2>
