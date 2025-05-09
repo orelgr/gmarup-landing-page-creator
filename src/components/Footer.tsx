@@ -1,9 +1,6 @@
-
 import React from 'react';
-
 const Footer = () => {
-  return (
-    <footer className="bg-gray-50 pt-12 pb-6">
+  return <footer className="bg-gray-50 pt-12 pb-6">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between mb-8 gap-8">
           <div className="md:w-1/3">
@@ -38,13 +35,13 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-gmarup-blue">משפטי</h3>
+            
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-600 hover:text-gmarup-blue transition-colors">תנאי שימוש</a>
+                
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-gmarup-blue transition-colors">מדיניות פרטיות</a>
+                
               </li>
             </ul>
           </div>
@@ -64,8 +61,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
