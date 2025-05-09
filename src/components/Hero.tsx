@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowLeft } from "lucide-react";
 const Hero = () => {
   return <section className="relative min-h-[90vh] md:min-h-[80vh] flex items-center bg-gradient-primary overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-primary opacity-90 my-[34px]"></div>
+      <div className="absolute inset-0 bg-gradient-primary opacity-90 my-[34px] bg-orange-950"></div>
       <div className="container mx-auto px-6 relative">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center text-center">
           <div className="md:w-1/2 text-white animate-fade-in mt-6 md:mt-0">
