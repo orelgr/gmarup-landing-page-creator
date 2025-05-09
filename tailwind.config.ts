@@ -67,6 +67,9 @@ export default {
 					blue: '#1E2A78',
 					turquoise: '#00C7C7',
 					gold: '#D4AF37',
+					'dark-gold': '#9F7E23',
+					'brown': '#362812',
+					'light-gold': '#E8D4A4',
 				}
 			},
 			fontFamily: {
@@ -75,6 +78,7 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'linear-gradient(135deg, #1E2A78 0%, #00C7C7 100%)',
+				'gradient-gold': 'linear-gradient(to right, #D4AF37, #E8D4A4, #D4AF37)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

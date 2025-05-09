@@ -18,16 +18,10 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="https://app.gmarup.com" 
-                className="btn-primary flex items-center justify-center gap-2"
+                className="bg-gmarup-gold hover:bg-gmarup-gold/90 text-gray-900 py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-2"
               >
                 התחבר למערכת
                 <ArrowLeft size={18} />
-              </a>
-              <a 
-                href="https://gmarup.com" 
-                className="btn-secondary flex items-center justify-center gap-2"
-              >
-                בקרו באתר הראשי
               </a>
             </div>
           </div>

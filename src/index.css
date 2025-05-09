@@ -114,7 +114,7 @@ html {
 
 @layer components {
   .btn-primary {
-    @apply bg-gradient-primary text-white py-3 px-6 rounded-xl font-medium hover:opacity-90 transition-all focus:ring-2 focus:ring-gmarup-blue focus:outline-none;
+    @apply bg-gmarup-gold text-gray-900 py-3 px-6 rounded-xl font-medium hover:bg-gmarup-gold/90 transition-all focus:ring-2 focus:ring-gmarup-gold focus:outline-none;
   }
   
   .btn-secondary {
