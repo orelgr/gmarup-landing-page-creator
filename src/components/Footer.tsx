@@ -24,7 +24,7 @@ const Footer = () => {
                 <a href="#video" className="text-gray-600 hover:text-gmarup-blue transition-colors">איך זה עובד</a>
               </li>
               <li>
-                <a href="#faq" className="text-gray-600 hover:text-gmarup-blue transition-colors">שאלות נפוצות</a>
+                
               </li>
               <li>
                 <a href="#contact" className="text-gray-600 hover:text-gmarup-blue transition-colors">צור קשר</a>
