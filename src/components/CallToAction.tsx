@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 
 const CallToAction = () => {
   return (
-    <section className="py-16 bg-gradient-primary text-white">
+    <section className="py-16 bg-gradient-to-br from-amber-100 to-amber-700 text-gray-900">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-2xl md:text-3xl font-semibold mb-8">
           הצטרפו לאלפי לומדים שכבר מתקדמים עם GmarUp
