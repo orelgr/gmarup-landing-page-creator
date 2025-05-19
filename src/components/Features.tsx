@@ -1,7 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
 import { MessageCircle, Book, Users } from 'lucide-react';
-import { ScrollArea } from './ui/scroll-area';
 
 const FeatureCard = ({ 
   icon: Icon, 
@@ -46,13 +45,13 @@ const FeatureCard = ({
   return (
     <div 
       ref={cardRef}
-      className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-500 ease-out opacity-0 translate-y-4 border border-amber-100 hover:border-amber-200"
+      className="bg-white rounded-lg p-6 shadow-md transition-all duration-500 ease-out opacity-0 translate-y-4"
     >
-      <div className="text-gmarup-brown mb-4 flex items-center justify-center w-16 h-16 bg-amber-50 rounded-full mx-auto">
+      <div className="text-gmarup-blue mb-4 flex items-center justify-center w-16 h-16 bg-blue-50 rounded-full">
         <Icon size={32} />
       </div>
-      <h3 className="text-xl font-semibold mb-3 text-gmarup-brown text-center">{title}</h3>
-      <p className="text-gray-600 text-center">{description}</p>
+      <h3 className="text-xl font-semibold mb-3 text-gmarup-blue">{title}</h3>
+      <p className="text-gray-600">{description}</p>
     </div>
   );
 };
@@ -80,15 +79,11 @@ const Features = () => {
   ];
 
   return (
-    <section className="section-padding bg-gradient-to-b from-amber-50 to-amber-100" id="features">
+    <section className="section-padding bg-gray-50" id="features">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12 opacity-0 animate-fade-in" style={{animationDelay: '0.1s', animationFillMode: 'forwards'}}>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gmarup-brown relative inline-block">
-            מה מיוחד במערכת?
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gmarup-gold to-transparent"></span>
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">לימוד הגמרא בצורה חדשנית ומתקדמת, עם כלים שיעזרו לכם להבין ולזכור</p>
-        </div>
+        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-12 text-gmarup-blue">
+          מה מיוחד במערכת?
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {featuresData.map((feature, index) => (
             <FeatureCard
