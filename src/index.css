@@ -1,8 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,6 +94,7 @@
 html {
   direction: rtl;
   scroll-behavior: smooth;
+  font-family: 'Assistant', sans-serif;
 }
 
 @layer base {
@@ -106,11 +103,13 @@ html {
   }
 
   body {
-    @apply bg-background text-foreground font-assistant;
+    @apply bg-background text-foreground;
+    font-family: 'Assistant', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-frank font-semibold;
+    font-family: 'Frank Ruhl Libre', serif;
+    @apply font-semibold;
   }
 }
 
