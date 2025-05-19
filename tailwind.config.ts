@@ -1,3 +1,6 @@
+<think>
+
+</think>
 
 import type { Config } from "tailwindcss";
 
@@ -75,10 +78,13 @@ export default {
 			fontFamily: {
 				assistant: ['Assistant', 'sans-serif'],
 				alef: ['Alef', 'sans-serif'],
+				frank: ['Frank Ruhl Libre', 'serif'],
 			},
 			backgroundImage: {
-				'gradient-primary': 'linear-gradient(135deg, #1E2A78 0%, #00C7C7 100%)',
+				'gradient-primary': 'linear-gradient(135deg, #D4AF37 0%, #E8D4A4 100%)',
 				'gradient-gold': 'linear-gradient(to right, #D4AF37, #E8D4A4, #D4AF37)',
+				'gradient-brown': 'linear-gradient(135deg, #362812 0%, #9F7E23 100%)',
+				'gradient-scroll': 'linear-gradient(to right, #D4AF37, #9F7E23)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -121,6 +127,22 @@ export default {
 						opacity: '1',
 						transform: 'translateX(0)'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'pulse-subtle': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.7'
+					}
 				}
 			},
 			animation: {
@@ -128,6 +150,8 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
 				'slide-in': 'slide-in 0.5s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse-subtle': 'pulse-subtle 4s ease-in-out infinite',
 			}
 		}
 	},

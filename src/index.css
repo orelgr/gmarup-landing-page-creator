@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -96,6 +97,7 @@
 
 html {
   direction: rtl;
+  scroll-behavior: smooth;
 }
 
 @layer base {
@@ -108,20 +110,61 @@ html {
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-assistant font-semibold;
+    @apply font-frank font-semibold;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-gmarup-gold text-gray-900 py-3 px-6 rounded-xl font-medium hover:bg-gmarup-gold/90 transition-all focus:ring-2 focus:ring-gmarup-gold focus:outline-none;
+    @apply bg-gradient-to-r from-gmarup-gold to-gmarup-dark-gold text-gray-900 py-3 px-6 rounded-xl font-medium transition-all transform hover:scale-105 hover:shadow-lg focus:ring-2 focus:ring-gmarup-gold focus:outline-none;
   }
   
   .btn-secondary {
-    @apply bg-white text-gmarup-blue py-3 px-6 rounded-xl font-medium border border-gmarup-blue hover:bg-gray-50 transition-all focus:ring-2 focus:ring-gmarup-blue focus:outline-none;
+    @apply bg-white text-gmarup-brown py-3 px-6 rounded-xl font-medium border border-gmarup-brown hover:bg-gray-50 transition-all focus:ring-2 focus:ring-gmarup-brown focus:outline-none;
   }
   
   .section-padding {
     @apply py-12 md:py-16 lg:py-24;
   }
+
+  .gmarup-card {
+    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .gmarup-gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gmarup-brown to-gmarup-gold;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9F7E23;
+}
+
+/* Talmud-style text decoration */
+.talmud-text {
+  position: relative;
+}
+
+.talmud-text::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #D4AF37, transparent);
 }

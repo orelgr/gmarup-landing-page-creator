@@ -1,47 +1,44 @@
 
 import React from 'react';
+
 const Footer = () => {
-  return <footer className="bg-amber-50 pt-12 pb-6">
+  return (
+    <footer className="bg-gradient-to-t from-amber-100 to-amber-50 pt-12 pb-6 relative">
+      {/* Decorative top border */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gmarup-gold via-gmarup-light-gold to-gmarup-gold"></div>
+      
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between mb-8 gap-8">
           <div className="md:w-1/3">
             <div className="mb-4">
-              <h2 className="text-xl font-bold text-amber-800">GmarUp</h2>
+              <h2 className="text-xl font-bold text-gmarup-brown">GmarUp</h2>
               <p className="text-gray-600 mt-2">לומדים, מבינים, מתקדמים</p>
             </div>
             <p className="text-gray-500 text-sm">חוויית לימוד מותאמת-אישית, הבנה קלה, ולימוד מהנה בעזרת AI מתקדם.</p>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-amber-800">ניווט מהיר</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gmarup-brown">ניווט מהיר</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-600 hover:text-amber-700 transition-colors">דף הבית</a>
+                <a href="#" className="text-gray-600 hover:text-gmarup-brown transition-colors">דף הבית</a>
               </li>
               <li>
-                <a href="#features" className="text-gray-600 hover:text-amber-700 transition-colors">תכונות</a>
+                <a href="#features" className="text-gray-600 hover:text-gmarup-brown transition-colors">תכונות</a>
               </li>
               <li>
-                <a href="#video" className="text-gray-600 hover:text-amber-700 transition-colors">איך זה עובד</a>
+                <a href="#video" className="text-gray-600 hover:text-gmarup-brown transition-colors">איך זה עובד</a>
               </li>
               <li>
-                
-              </li>
-              <li>
-                <a href="#contact" className="text-gray-600 hover:text-amber-700 transition-colors">צור קשר</a>
+                <a href="#contact" className="text-gray-600 hover:text-gmarup-brown transition-colors">צור קשר</a>
               </li>
             </ul>
           </div>
           
           <div>
-            
             <ul className="space-y-2">
-              <li>
-                
-              </li>
-              <li>
-                
-              </li>
+              <li></li>
+              <li></li>
             </ul>
           </div>
         </div>
@@ -51,12 +48,12 @@ const Footer = () => {
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
               © 2025 GmarUp. כל הזכויות שמורות.
             </p>
-            <div>
-              
-            </div>
+            <div></div>
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
